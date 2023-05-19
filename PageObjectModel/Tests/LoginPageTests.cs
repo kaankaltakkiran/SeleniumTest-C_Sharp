@@ -42,7 +42,7 @@ namespace PageObjectModel.Tests
             _driver.Navigate().GoToUrl("https://www.amazon.com.tr/");
             //Oluşturduğumuz methota değer yollama
             lg.login("kaan_fb_aslan@hotmail.com", "123456789");
-            //Assert ile test kontrol istenen olumuş mu ? fail veya pass
+            //Assert ile test kontrol istenen olumuş mu ? fail veya pass durumu
             Assert.True(_driver.Title.Contains("Anasayfa"));
 
         }
